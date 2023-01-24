@@ -12,12 +12,6 @@ fi
 
 kubectl completion zsh 2> /dev/null >| "$ZSH_CACHE_DIR/completions/_kubectl" &|
 
-alias kc=kubectl
-alias kcd='kubectl describe'
-alias kcg='kubectl get'
-alias kcgp='kubectl get pods'
-alias kcpga='kubectl get pods -A'
-
 # Only run if the user actually has kubectl installed
 if (( ${+_comps[kubectl]} )); then
   function kcj() { kubectl "$@" -o json | jq; }
@@ -30,6 +24,23 @@ if (( ${+_comps[kubectl]} )); then
   compdef ky=kubectl
 fi
 
+if ! command -v abbrev-alias &> /dev/null;
+then
+alias kc=kubectl
+alias kcd='kubectl describe'
+alias kcg='kubectl get'
+alias kcgp='kubectl get pods'
+alias kcpga='kubectl get pods -A'
 alias docker=nerdctl # Rancher Desktop
 alias kx=kubectx
 alias kn=kubens
+else
+abbrev-alias kc=kubectl
+abbrev-alias kcd='kubectl describe'
+abbrev-alias kcg='kubectl get'
+abbrev-alias kcgp='kubectl get pods'
+abbrev-alias kcpga='kubectl get pods -A'
+abbrev-alias docker=nerdctl # Rancher Desktop
+abbrev-alias kx=kubectx
+abbrev-alias kn=kubens
+fi
