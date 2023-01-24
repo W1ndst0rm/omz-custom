@@ -19,6 +19,7 @@ alias untar="tar xzvf"
 alias tarup="tar czvf"
 alias grep="grep --color"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+alias flushdns="sudo killall -HUP mDNSResponder"
 
 #Pre-Commit Alias
 alias pcra="pre-commit run --all-files"
@@ -34,6 +35,7 @@ abbrev-alias untar="tar xzvf"
 abbrev-alias tarup="tar czvf"
 abbrev-alias grep="grep --color"
 abbrev-alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+abbrev-alias flushdns="sudo killall -HUP mDNSResponder"
 
 #Pre-Commit Alias
 abbrev-alias pcra="pre-commit run --all-files"
