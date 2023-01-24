@@ -26,21 +26,21 @@ fi
 
 if ! command -v abbrev-alias &> /dev/null;
 then
-alias kc=kubectl
-alias kcd='kubectl describe'
-alias kcg='kubectl get'
-alias kcgp='kubectl get pods'
-alias kcpga='kubectl get pods -A'
-alias docker=nerdctl # Rancher Desktop
-alias kx=kubectx
-alias kn=kubens
+  alias kc=kubectl
+  alias kcd='kubectl describe'
+  alias kcg='kubectl get'
+  alias kcgp='kubectl get pods'
+  alias kcpga='kubectl get pods -A'
+  alias docker=nerdctl # Rancher Desktop
+  alias kx=kubectx
+  alias kn=kubens
 else
-abbrev-alias kc=kubectl
-abbrev-alias kcd='kubectl describe'
-abbrev-alias kcg='kubectl get'
-abbrev-alias kcgp='kubectl get pods'
-abbrev-alias kcpga='kubectl get pods -A'
-abbrev-alias docker=nerdctl # Rancher Desktop
-abbrev-alias kx=kubectx
-abbrev-alias kn=kubens
+  abbrev-alias kc=kubectl
+  abbrev-alias kcd='kubectl describe'
+  abbrev-alias kcg='kubectl get'
+  abbrev-alias kcgp='kubectl get pods'
+  abbrev-alias kcpga='kubectl get pods -A'
+  abbrev-alias docker=nerdctl # Rancher Desktop
+  abbrev-alias kx=kubectx
+  abbrev-alias kn=kubens
 fi
