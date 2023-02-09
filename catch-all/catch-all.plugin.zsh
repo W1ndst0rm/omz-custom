@@ -11,8 +11,8 @@ alias watch="hwatch"
 if ! command -v abbrev-alias &> /dev/null;
 then
 # General Alias
-# alias cdc="cd $HOME/code/work/corp"
-alias cde="cd $HOME/code/work/engineering"
+alias cdng="code $HOME/Desktop/next-gen.code-workspace"
+alias cdh="code $HOME/Desktop/jville-family.code-workspace"
 alias sshpk="cat .ssh/id_rsa.pub"
 alias sshpkc="cat .ssh/id_rsa.pub | pbcopy"
 alias untar="tar xzvf"
@@ -27,8 +27,8 @@ alias pcin="pre-commit install"
 alias pctr="pre-commit try-repo"
 else
 # General Alias
-# abbrev-alias cdc="cd $HOME/code/work/corp"
-abbrev-alias cde="cd $HOME/code/work/engineering"
+abbrev-alias cdng="code $HOME/Desktop/next-gen.code-workspace"
+abbrev-alias cdh="code $HOME/Desktop/jville-family.code-workspace"
 abbrev-alias sshpk="cat .ssh/id_rsa.pub"
 abbrev-alias sshpkc="cat .ssh/id_rsa.pub | pbcopy"
 abbrev-alias untar="tar xzvf"
