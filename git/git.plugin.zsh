@@ -5,7 +5,7 @@ fi
 if ! command -v abbrev-alias &> /dev/null;
 then
   # Git Alias
-  alias catt="git commit -a -m "
+  alias catt="git commit -a -S -m "
   alias gpom="git push origin main"
   alias gpod="git push origin development"
   alias gpos="git push origin stable"
@@ -20,7 +20,7 @@ then
   alias gg="ghq get"
 else
 # Git Alias with abbrev-alias expansion
-  abbrev-alias catt="git commit -a -m "
+  abbrev-alias catt="git commit -a -S -m "
   abbrev-alias gpom="git push origin main"
   abbrev-alias gpod="git push origin development"
   abbrev-alias gpos="git push origin stable"
