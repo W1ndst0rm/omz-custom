@@ -31,7 +31,6 @@ then
   alias kcg='kubectl get'
   alias kcgp='kubectl get pods'
   alias kcpga='kubectl get pods -A'
-  alias docker=nerdctl # Rancher Desktop
   alias kx=kubectx
   alias kn=kubens
 else
@@ -40,7 +39,6 @@ else
   abbrev-alias kcg='kubectl get'
   abbrev-alias kcgp='kubectl get pods'
   abbrev-alias kcpga='kubectl get pods -A'
-  abbrev-alias docker=nerdctl # Rancher Desktop
   abbrev-alias kx=kubectx
   abbrev-alias kn=kubens
 fi
